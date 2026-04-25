@@ -24,8 +24,13 @@ export const headerData = {
       href: 'https://blog.540881.xyz',// actural link
       target: '_blank',
     },
+    {
+      text: '腐竹の小站',
+      href: 'https://blog.540881.xyz',
+      target: '_blank',
+    },
   ],
-  actions: [{ text: '加入我们', href: '#join',variant: 'primary',}],
+  actions: [{ text: '加入我们', href: '/join',variant: 'primary',}],
 };
 
 export const footerData = {
