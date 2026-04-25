@@ -4,15 +4,15 @@ export const headerData = {
   links: [
     {
       text: '公告',
-      href: '/posts?tag=announcement',
+      href: '/category/announcement',
     },
     {
       text: '教程',
-      href: '/posts?tag=guide',
+      href: '/category/guide',
     },
     {
       text: '存档展示',
-      href: '/posts?tag=archive',
+      href: '/category/archive',
     },
     {
       text: '动态地图',
