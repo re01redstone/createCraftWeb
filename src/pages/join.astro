@@ -3,47 +3,34 @@ import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Note from '~/components/widgets/Note.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 
+import CreateCraft from '~/assets/images/CreateCraft.png';
 const metadata = { title: '加入 CreateCraft' };
 ---
 
 <Layout metadata={metadata}>
 
-  <HeroText
-    title="加入 CreateCraft"
-  />
-
   <!-- Q群二维码 -->
-  <section class="py-12 px-4">
-    <div class="max-w-sm mx-auto text-center">
-      <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Q群号：<strong class="text-gray-800 dark:text-gray-200">597720420</strong>
-      </p>
-      <img
-        src="/images/qq-qrcode.png"
-        alt="Q群二维码"
-        class="w-48 h-48 mx-auto rounded-2xl border border-gray-200 dark:border-gray-700 mb-4"
-      />
-    </div>
-  </section>
-
-  <CallToAction
+  <Hero2
     actions={[
-      {
+        {
         variant: 'primary',
         text: '配置教程',
         href: '/category/guide',
         icon: 'tabler:book',
-      },
-      {
+        },
+        {
         text: '查看公告',
         href: '/category/announcemnt',
         icon: 'tabler:speakerphone',
-      },
+        },
     ]}
+    image={{ src: CreateCraft, alt: 'CreateCraft QR code'}}
+    title="加入CreateCraft"
+    subtitle="QQ群号:597720420"
   >
-  </CallToAction>
+  </Hero2>
 
 </Layout>
