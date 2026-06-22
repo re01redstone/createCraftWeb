@@ -30,12 +30,12 @@
   }
 
   .text-glow {
-    text-shadow: 0 0 7px rgba(181, 138, 59, 0.4), 0 0 20px rgba(181, 138, 59, 0.2);
+    text-shadow: 0 0 7px rgba(247, 216, 137, 0.4), 0 0 20px rgba(247, 216, 137, 0.2);
   }
 
   .game-panel {
     background: rgba(0, 0, 0, 0.04);
-    border: 1px solid rgba(181, 138, 59, 0.15);
+    border: 1px solid rgba(247, 216, 137, 0.2);
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   }
 }

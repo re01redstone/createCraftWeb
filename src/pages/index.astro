@@ -6,7 +6,8 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import BlogHighlightedPosts from '~/components/widgets/BlogHighlightedPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
-import indexHero from '~/assets/images/index-hero.png';
+import heroLight from '~/assets/images/hero-light.png';
+import heroDark from '~/assets/images/hero-dark.png';
 
 
 const metadata = {
@@ -21,9 +22,14 @@ const metadata = {
   <section class="relative h-[75vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden">
     <!-- 背景图片 -->
     <img
-      src={indexHero.src}
+      src={heroLight.src}
       alt=""
-      class="absolute inset-0 w-full h-full object-cover opacity-60"
+      class="absolute inset-0 w-full h-full object-cover opacity-60 block dark:hidden"
+    />
+    <img
+      src={heroDark.src}
+      alt=""
+      class="absolute inset-0 w-full h-full object-cover opacity-60 hidden dark:block"
     />
     <!-- 遮罩 -->
     <div class="absolute inset-0 bg-black/20"></div>
@@ -44,7 +50,7 @@ const metadata = {
           教程
         </a>
         <a href="/category/announcement"
-          class="px-6 py-3 bg-[#c49a52] hover:bg-[#b5893b] text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:scale-105 border border-[#daaf6b]">
+          class="px-6 py-3 bg-secondary hover:bg-primary text-white font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/35 hover:scale-105 border border-primary/30">
           公告
         </a>
       </div>
