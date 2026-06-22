@@ -30,7 +30,7 @@ export const headerData = {
       target: '_blank',
     },
   ],
-  actions: [{ text: '加入我们', href: '/join',variant: 'primary',}],
+  actions: [{ text: '加入Q群', href: '/join',variant: 'primary',}],
 };
 
 export const footerData = {
@@ -42,6 +42,6 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/re01redstone/createCraftWeb' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/re01redstone"> Potpot123</a> · Driven by <a class="text-blue-600 hover:underline dark:text-muted" href="https://astro.build/">Astro</a> and <a class="text-blue-600 hover:underline dark:text-muted" href="https://astrowind.vercel.app/">Astrowind</a>
+    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/re01redstone"> Potpot123</a> · Assisted by Deepseek V4 Pro · Driven by <a class="text-blue-600 hover:underline dark:text-muted" href="https://astro.build/">Astro</a> and <a class="text-blue-600 hover:underline dark:text-muted" href="https://astrowind.vercel.app/">Astrowind</a>
   `,
 };

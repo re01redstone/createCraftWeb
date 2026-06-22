@@ -21,12 +21,22 @@ export default {
 
       animation: {
         fade: 'fadeInUp 1s both',
+        glow: 'glowPulse 3s ease-in-out infinite',
+        'scanline': 'scanMove 8s linear infinite',
       },
 
       keyframes: {
         fadeInUp: {
           '0%': { opacity: 0, transform: 'translateY(2rem)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        glowPulse: {
+          '0%, 100%': { textShadow: '0 0 7px rgba(181,138,59,0.3), 0 0 20px rgba(181,138,59,0.15)' },
+          '50%': { textShadow: '0 0 15px rgba(181,138,59,0.6), 0 0 40px rgba(181,138,59,0.3), 0 0 60px rgba(181,138,59,0.15)' },
+        },
+        scanMove: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(8px)' },
         },
       },
     },

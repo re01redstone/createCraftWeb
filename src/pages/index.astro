@@ -1,22 +1,14 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 
-import Hero from '~/components/widgets/Hero.astro';
-import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
-import Features2 from '~/components/widgets/Features2.astro';
-import Steps from '~/components/widgets/Steps.astro';
-import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
-import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+import BlogHighlightedPosts from '~/components/widgets/BlogHighlightedPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
-
-import heroBg from '~/assets/images/hero-bg.png';
 
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'CreateCraft官方网站',
   ignoreTitleTemplate: true,
 };
 ---
@@ -24,34 +16,33 @@ const metadata = {
 <Layout metadata={metadata}>
 
 <!-- Hero Widget -->
-  <section class="relative h-[70vh] min-h-[400px] flex items-center justify-center text-center overflow-hidden">
+  <section class="relative h-[75vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden">
     <!-- 背景图片 -->
     <img
       src="/images/index-hero.png"
       alt=""
-      class="absolute inset-0 w-full h-full object-cover"
+      class="absolute inset-0 w-full h-full object-cover opacity-60"
     />
-    <!-- 遮罩，让文字更清晰 -->
-    <div class="absolute inset-0 bg-black/50"></div>
-
+    <!-- 遮罩 -->
+    <div class="absolute inset-0 bg-black/20"></div>
     <!-- 文字内容 -->
     <div class="relative z-10 px-6 max-w-4xl mx-auto">
-      <p class="text-blue-400 font-semibold uppercase tracking-widest text-sm mb-3">
+      <p class="text-primary font-semibold uppercase tracking-[0.3em] text-sm mb-4 text-glow">
         Minecraft 生存服务器
       </p>
-      <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">
-        CreateCraft官方网站
+      <h1 class="text-5xl md:text-7xl font-bold text-white mb-4 tracking-tight animate-glow">
+        CreateCraft
       </h1>
-      <p class="text-xl text-gray-200 mb-8">
-      机械动力/通用机械/原版 Minecraft服务器
+      <p class="text-xl text-gray-200 mb-8 font-light tracking-wide">
+        机械动力/科技/探索/养老/魔法 Minecraft混合端服务器
       </p>
       <div class="flex flex-wrap gap-4 justify-center">
         <a href="/category/guide"
-          class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors">
+          class="px-6 py-3 bg-primary/90 hover:bg-primary text-white font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:scale-105 border border-primary/50">
           教程
         </a>
         <a href="/category/announcement"
-          class="px-6 py-3 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-lg backdrop-blur-sm transition-colors border border-white/30">
+          class="px-6 py-3 bg-[#c49a52] hover:bg-[#b5893b] text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:scale-105 border border-[#daaf6b]">
           公告
         </a>
       </div>
@@ -66,55 +57,57 @@ const metadata = {
     linkText="查看全部公告"
     linkUrl="/category/announcement"
     count={2}
+    classes={{ container: 'game-panel rounded-xl' }}
   />
 
 
   <!-- View Archive -->
-  <BlogLatestPosts
-    id="archive"
+  <BlogHighlightedPosts
+    id=""
     title="往期存档回顾"
     information="2024-至今, 我们共同的回忆"
     linkText="了解更多"
     linkUrl="/category/archive"
-    count={2}
+    postIds={[]}
+    classes={{ container: 'game-panel rounded-xl' }}
   />
 
   <!-- this term intro -->
   <Features
-  tagline="即将开启"
+  tagline="大开拓纪元落幕 · 末壤新生"
   title="CreateCraft2026"
-  subtitle="高版本原版生存建筑服务器"
+  subtitle="养老/探险/空岛服 — 在浮空孤岛上重建文明"
   columns={3}
   items={[
     {
-      title: '游戏版本',
-      description: '26.1+ spigot',
-      icon: 'tabler:cube',
+      title: '机械动力:航空学',
+      description: '核心模组，航空学扩展让你在空岛间自由飞翔',
+      icon: 'tabler:engine',
     },
     {
-      title: '预计开服',
-      description: '2026暑假',
-      icon: 'tabler:calendar',
+      title: '沉浸工程',
+      description: '硬核重工业路线，发电厂与高压电网为孤岛供能',
+      icon: 'tabler:bolt',
     },
     {
-      title: '插件',
-      description: 'SimpleTpa,MultiLogin,Dynmap,AllMusic等',
-      icon: 'tabler:package',
+      title: '暮色森林',
+      description: '穿越自然之门踏入第二大陆，资源富饶却危机四伏',
+      icon: 'tabler:trees',
     },
     {
-      title: '活动',
-      description: '周期性解谜, 建筑大赛等',
-      icon: 'tabler:activity',
+      title: '植物魔法',
+      description: '用花朵与魔法搭建自然之门，跨越虚空裂痕',
+      icon: 'tabler:flower',
     },
     {
-      title: '进度管理',
-      description: '阶段性解锁下界/末地, 保证参与感',
-      icon: 'tabler:lock',
+      title: '养老生活',
+      description: '森罗物语厨房酒馆、MCA村民、农夫乐事，悠闲度日',
+      icon: 'tabler:home-heart',
     },
     {
-      title: '优秀管理',
-      description: 'nb的腐竹保证服务器安全稳定运行',
-      icon: 'tabler:shield-half',
+      title: '阶段性解锁',
+      description: '随进度逐步解锁新区域与科技，杜绝进度割裂，保持参与感',
+      icon: 'tabler:lock-open',
     },
   ]}
   />
@@ -149,10 +142,11 @@ const metadata = {
   <CallToAction
       title="CreateCraft欢迎你的到来"
       subtitle="祝你在CreateCraft度过一段难忘的时光"
+      classes={{ container: 'game-panel rounded-xl mt-8' }}
     actions={[
       {
         variant: 'primary',
-        text: '加入我们',
+        text: '加入Q群',
         href: '/join',
       },
     ]}

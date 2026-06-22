@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4f3b7f645e737d02",
+        "id": "985cffc73c9f54d3",
         "type": "tabs",
         "children": [
           {
-            "id": "52539a7343a07192",
+            "id": "5b140df80f77cd0e",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -176,7 +176,7 @@
       "bases:新建数据库": false
     }
   },
-  "active": "52539a7343a07192",
+  "active": "b919951be5bbeadf",
   "lastOpenFiles": [
     "src/content/post/easytier-guide.md",
     "src/data/post/guide/easytier-guide.md",

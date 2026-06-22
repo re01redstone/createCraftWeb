@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3fbde6e4dac9af8f",
+        "id": "c96ba7440ab610ff",
         "type": "tabs",
         "children": [
           {
-            "id": "233d4b5fb0fa389e",
+            "id": "33a4e7c25bf02a37",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Easytier下载与使用.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Easytier下载与使用"
+              "title": "新标签页"
             }
           }
         ]
@@ -183,7 +179,7 @@
       "bases:新建数据库": false
     }
   },
-  "active": "233d4b5fb0fa389e",
+  "active": "33a4e7c25bf02a37",
   "lastOpenFiles": [
     "Easytier下载与使用.md",
     "截屏2026-05-07 16.45.18.png"
