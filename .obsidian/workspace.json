@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "985cffc73c9f54d3",
+        "id": "18ebd8d301e7e22a",
         "type": "tabs",
         "children": [
           {
-            "id": "5b140df80f77cd0e",
+            "id": "fba472c7785cdeec",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "src/content/post/easytier-guide.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "easytier-guide"
             }
           }
         ]
@@ -176,12 +180,30 @@
       "bases:新建数据库": false
     }
   },
-  "active": "b919951be5bbeadf",
+  "active": "fba472c7785cdeec",
   "lastOpenFiles": [
+    "src/assets/images/covers/easytier-guide.png",
     "src/content/post/easytier-guide.md",
+    "src/content/post/images/easytier-guide.png",
+    "~/images/截屏2026-05-07.md",
+    "~/images",
+    "~",
+    "src/content/post/images",
+    "src/content/post/images/截屏2026-05-07 16.45.18.png",
+    "src/assets/images/covers",
+    "src/content/post/images",
+    "src/assets/images/CreateCraft.png",
+    "src/assets/images/index-hero.png",
+    "dist/sitemap-index.xml",
+    "dist/sitemap-0.xml",
+    "dist/_astro/CreateCraft.Dk3iH-ZX_ZuLLAb.webp",
+    "dist/_astro/CreateCraft.Dk3iH-ZX_1cbSNS.webp",
+    "dist/_astro/CreateCraft.Dk3iH-ZX_Z2tgwdK.webp",
+    "dist/_astro/CreateCraft.Dk3iH-ZX_1VvJmx.webp",
+    "dist/index.html",
+    "dist/posts/easytier-guide/index.html",
+    "dist/posts/index.html",
     "src/data/post/guide/easytier-guide.md",
-    "src/content/post/guide/easytier-guide.md",
-    "src/content/post/guide",
-    "src/data/post/guide"
+    "src/content/post/guide/easytier-guide.md"
   ]
 }

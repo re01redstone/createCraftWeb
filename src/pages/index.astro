@@ -6,6 +6,8 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import BlogHighlightedPosts from '~/components/widgets/BlogHighlightedPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
+import indexHero from '~/assets/images/index-hero.png';
+
 
 const metadata = {
   title: 'CreateCraft官方网站',
@@ -19,7 +21,7 @@ const metadata = {
   <section class="relative h-[75vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden">
     <!-- 背景图片 -->
     <img
-      src="/images/index-hero.png"
+      src={indexHero.src}
       alt=""
       class="absolute inset-0 w-full h-full object-cover opacity-60"
     />
