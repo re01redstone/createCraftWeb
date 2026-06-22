@@ -1,4 +1,3 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -30,7 +29,7 @@ export const headerData = {
       target: '_blank',
     },
   ],
-  actions: [{ text: '加入Q群', href: '/join',variant: 'primary',}],
+  actions: [{ text: '加入Q群', href: '/join', variant: 'primary' as const }],
 };
 
 export const footerData = {
